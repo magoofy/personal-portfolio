@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #41ba51;
+    --secondary-color: #2b2b2b;    
+    --tertiary-color: #d4e6ca;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--tertiary-color);
+}
+
+/* HEADER STYLES */
+header {
+    padding: 20px 15px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+}
+
+header a{
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 0px 25px;
+}
+  
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+/*HERO STYLES*/
+.hero {
+    background-image: url('../images/hero-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 100%;
+    padding-top: 200px;
+}
+
+.hero p {
+    color: white;
+    padding: 20px 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*SECTION TITLE STYLES*/
+.section-title {
+    font-size: 20px;
+}
+
+/*ABOUT ME STYLES*/
+.about-me {
+    padding: 20px;
+}
+
+.about-me p {
+    line-height: 22px;
+}
+
+.my-work {
+
+}
+
+footer {
+
+}
