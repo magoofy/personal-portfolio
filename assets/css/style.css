@@ -14,6 +14,9 @@ body {
     background-color: var(--tertiary-color);
 }
 
+h2 {
+    font-size: 40px
+}
 /* HEADER STYLES */
 header {
     padding: 20px 15px;
@@ -26,7 +29,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 45px;
     color: var(--primary-color);
 }
 
@@ -55,23 +58,27 @@ header nav ul {
     color: white;
     padding: 20px 15px;
     display: flex;
-    justify-content: flex-end;
     align-items: flex-end;
-}
-
-/*SECTION TITLE STYLES*/
-.section-title {
-    font-size: 20px;
 }
 
 /*ABOUT ME STYLES*/
 .about-me {
-    padding: 20px;
+    padding: 100px 30px 70px 30px;
+}
+
+.about-me h2 {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 25px 10px 0;
+    border-bottom: 2px solid var(--primary-color);
+    margin-bottom: 5px;
 }
 
 .about-me p {
-    line-height: 22px;
+    line-height: 37px;
+    font-size: 20px;
 }
+
 
 .my-work {
 
