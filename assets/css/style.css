@@ -3,7 +3,7 @@
     --secondary-color: #2b2b2b;    
     --tertiary-color: #d4e6ca;
 }
-
+/*UNIVERSAL SYTLES*/
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +16,14 @@ body {
 
 h2 {
     font-size: 40px
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+    
+.grow:hover { 
+    transform: scale(1.1); 
 }
 /* HEADER STYLES */
 header {
@@ -84,6 +92,22 @@ header nav ul {
 
 }
 
+/*FOOTER STYLES*/
+
 footer {
 
+}
+
+footer h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info {
+    font-size: 20px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    margin: 40px;
 }
