@@ -18,13 +18,6 @@ h2 {
     font-size: 40px
 }
 
-.grow { 
-    transition: all .2s ease-in-out; 
-}
-    
-.grow:hover { 
-    transform: scale(1.1); 
-}
 /* HEADER STYLES */
 header {
     padding: 20px 15px;
@@ -78,7 +71,7 @@ header nav ul {
     display: flex;
     justify-content: flex-end;
     padding: 0 25px 10px 0;
-    border-bottom: 2px solid var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
     margin-bottom: 5px;
 }
 
@@ -87,15 +80,43 @@ header nav ul {
     font-size: 20px;
 }
 
-
+/*MY WORK*/
 .my-work {
-
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+  
+  .program {
+    margin: 20px;
+    flex: 1;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+  
+  .program img {
+    width: 100%;
+}
+  
+  .program-des {
+    padding: 25px;
+    line-height: 1.3;
+}
+  
+  .program-des h3 {
+    font-size: 24px;
+}
+  
+  .program-des p {
+    font-size: 17px;
 }
 
 /*FOOTER STYLES*/
 
 footer {
-
+    padding: 60px 30px 70px 30px;
 }
 
 footer h2 {
