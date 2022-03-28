@@ -18,9 +18,9 @@ body {
     font-size: 40px;
     display: flex;
     justify-content: flex-end;
-    padding: 0 25px 10px 0;
+    padding: 10px 10px;
     border-bottom: 3px solid var(--primary-color);
-    margin-bottom: 5px;
+    margin: 70px 20px 0px;
 }
 
 /* HEADER STYLES */
@@ -67,6 +67,7 @@ header a:hover::before {
 header nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
   
 /*HERO STYLES*/
@@ -87,7 +88,7 @@ header nav ul {
 
 /*ABOUT ME STYLES*/
 .about-me {
-    padding: 100px 30px 70px 30px;
+    padding: 20px 20px
 }
 
 .about-me p {
@@ -144,10 +145,33 @@ footer h2 {
 }
 
 .contact-info {
-    font-size: 20px;
+    list-style:none;
+    font-size: 25px;
     color: var(--primary-color);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 10px;
     margin: 40px;
+}
+
+.contact-info a {
+    box-shadow: inset 0 0 0 0 var(--primary-color);
+    text-decoration: none;
+    color: var(--primary-color);
+    margin: 0 -.25rem;
+    pad: 0 -.25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.contact-info a:hover {
+    box-shadow: inset 100px 0 0 0 var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+
+/*MEDIA QUERY FOR PHONES AND SMALLER*/
+@media screen and (max-width: 575px) {
+    .my-work {
+        flex-direction: column;
+    }
 }
