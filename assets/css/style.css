@@ -14,8 +14,13 @@ body {
     background-color: var(--tertiary-color);
 }
 
-h2 {
-    font-size: 40px
+.section-headers {
+    font-size: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 25px 10px 0;
+    border-bottom: 3px solid var(--primary-color);
+    margin-bottom: 5px;
 }
 
 /* HEADER STYLES */
@@ -39,6 +44,24 @@ header a{
     text-decoration: none;
     color: var(--primary-color);
     padding: 0px 25px;
+    position: relative
+}
+header a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+}
+header a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
 }
   
 header nav ul {
@@ -67,14 +90,6 @@ header nav ul {
     padding: 100px 30px 70px 30px;
 }
 
-.about-me h2 {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0 25px 10px 0;
-    border-bottom: 3px solid var(--primary-color);
-    margin-bottom: 5px;
-}
-
 .about-me p {
     line-height: 37px;
     font-size: 20px;
@@ -88,28 +103,32 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-around;
 }
-  
-  .program {
+
+.my-work h2 {
+    display: flex;
+}
+
+.program {
     margin: 20px;
     flex: 1;
     background: var(--secondary-color);
     color: var(--primary-color);
 }
   
-  .program img {
+.program img {
     width: 100%;
 }
   
-  .program-des {
+.program-des {
     padding: 25px;
     line-height: 1.3;
 }
   
-  .program-des h3 {
+.program-des h3 {
     font-size: 24px;
 }
   
-  .program-des p {
+.program-des p {
     font-size: 17px;
 }
 
