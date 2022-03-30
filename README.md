@@ -1,3 +1,5 @@
+<img src="./assets/images/hero-sc.jpg" alt="hero of my website" />
+
 # My Personal Portfolio
 
 ## Purpose
